@@ -3,11 +3,14 @@ description = Integrates a WYSIWYG into Drupal.
 core = 7.x
 package = GSB
 php = 5.2.4
+version = 7.x-1.0
 project = gsb_feature_wysiwyg
 dependencies[] = caption_filter
 dependencies[] = ctools
 dependencies[] = defaultconfig
 dependencies[] = features
+dependencies[] = features_override
+dependencies[] = filter
 dependencies[] = image_resize_filter
 dependencies[] = linkit
 dependencies[] = media
@@ -17,7 +20,9 @@ dependencies[] = media_youtube
 dependencies[] = strongarm
 dependencies[] = wysiwyg
 dependencies[] = wysiwyg_filter
+scripts[] = js/caption.js
 stylesheets[all][] = gsb-wysiwyg.css
+datestamp = 1368566405
 features[ctools][] = linkit:linkit_profiles:1
 features[ctools][] = strongarm:strongarm:1
 features[defaultconfig][] = user_default_permissions:use text format gsb_html_text
@@ -30,6 +35,3 @@ features[variable][] = media__wysiwyg_allowed_types
 features[variable][] = media__wysiwyg_browser_plugins
 features[wysiwyg][] = gsb_html_text
 features[wysiwyg][] = gsb_wysiwyg_text
-
-
-

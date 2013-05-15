@@ -126,6 +126,51 @@ function gsb_feature_wysiwyg_module_implements_alter(&$implementations, $hook) {
  */
 function gsb_feature_wysiwyg_wysiwyg_editor_settings_alter(&$settings, $context) {
 
+   if (isset($settings['toolbar'][0])) {
+
+    unset($settings['toolbar'][0]);
+
+    $settings['toolbar'][0] = array(
+      "Bold",
+      "Italic",
+      "Styles",
+      "JustifyLeft",
+      "JustifyCenter",
+      "JustifyRight",
+      "-",
+      "BulletedList",
+      "NumberedList",
+      "-",
+      "Undo",
+      "Redo",
+      "-",
+      "Link",
+      "Unlink",
+      "-",
+      "Image",
+      "Superscript",
+      "Blockquote",
+      "Source",
+      "HorizontalRule",
+      "-",
+      "Cut",
+      "Copy",
+      "PasteText",
+      "PasteFromWord",
+      "-",
+      "Table",
+      "SelectAll",
+      "SpellChecker",
+      "Scayt",
+      "media",
+      "Teaser"
+    );
+
+  }
+
+  /*
+
+
   // Only work the magic on the panopoly profiles
   if (strpos($context['profile']->format, 'gsb_') === 0) {
 
@@ -254,4 +299,9 @@ function gsb_feature_wysiwyg_wysiwyg_editor_settings_alter(&$settings, $context)
         break;
     }
   }
+
+
+  */
+
+
 }

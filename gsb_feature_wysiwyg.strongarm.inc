@@ -27,9 +27,9 @@ function gsb_feature_wysiwyg_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'media__wysiwyg_browser_plugins';
   $strongarm->value = array(
-    0 => 'upload',
-    1 => 'media_default--media_browser_1',
-    2 => 'media_internet',
+    0 => 'gsb_media_center_image',
+    1 => 'gsb_media_center_video',
+    2 => 'gsb_media_center_document',
   );
   $export['media__wysiwyg_browser_plugins'] = $strongarm;
 
