@@ -26,7 +26,7 @@ function gsb_feature_wysiwyg_defaultconfig_user_default_permissions() {
     'name' => 'use text format gsb_html_text',
     'roles' => array(
       'administrator' => 'administrator',
-      'section editor' => 'section editor',
+      'section editor' => 'section editor',      
       'section manager' => 'section manager',
     ),
     'module' => 'filter',
@@ -40,7 +40,7 @@ function gsb_feature_wysiwyg_defaultconfig_user_default_permissions() {
       'administrator' => 'administrator',
       'cwo_admin' => 'cwo_admin',
       'fa' => 'fa',
-      'section editor' => 'section editor',
+      'section editor' => 'section editor',      
       'section manager' => 'section manager',
     ),
     'module' => 'filter',

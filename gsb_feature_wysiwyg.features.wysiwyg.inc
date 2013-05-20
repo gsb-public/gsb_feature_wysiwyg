@@ -68,6 +68,7 @@ function gsb_feature_wysiwyg_wysiwyg_default_profiles() {
           'Redo' => 1,
           'Link' => 1,
           'Unlink' => 1,
+          'Anchor' => 1,
           'Image' => 1,
           'Superscript' => 1,
           'Blockquote' => 1,
@@ -77,15 +78,18 @@ function gsb_feature_wysiwyg_wysiwyg_default_profiles() {
           'Copy' => 1,
           'PasteText' => 1,
           'PasteFromWord' => 1,
+          'SpecialChar' => 1,
           'Styles' => 1,
           'Table' => 1,
           'SelectAll' => 1,
           'SpellChecker' => 1,
           'Scayt' => 1,
         ),
+        'linkit' => array(
+          'linkit' => 1,
+        ),
         'drupal' => array(
           'media' => 1,
-          'break' => 1,
         ),
       ),
       'toolbar_loc' => 'top',
@@ -102,17 +106,17 @@ function gsb_feature_wysiwyg_wysiwyg_default_profiles() {
       'css_setting' => 'theme',
       'css_path' => '',
       'css_classes' => 'Heading H2=h2
-    Heading H3=h3
-    Heading H4=h4
-    Heading H5=h5
-    Heading H6=h6
-    Accordion Title=p.acc-title
-    Accordion Body=p.acc-body
-    Caption Left=div.caption-left
-    Caption Right=div.caption-right
-    Intro Copy=p.intro-copy
-    Quote=div.callout
-    Quote Author=p.callout-author',
+Heading H3=h3
+Heading H4=h4
+Heading H5=h5
+Heading H6=h6
+Accordion Title=p.acc-title
+Accordion Body=p.acc-body
+Caption Left=div.caption-left
+Caption Right=div.caption-right
+Intro Copy=p.intro-copy
+Quote=div.callout
+Quote Author=p.callout-author',
     ),
   );
 
