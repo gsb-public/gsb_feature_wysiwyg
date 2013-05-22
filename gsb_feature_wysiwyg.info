@@ -19,7 +19,6 @@ dependencies[] = media_vimeo
 dependencies[] = media_youtube
 dependencies[] = strongarm
 dependencies[] = wysiwyg
-scripts[] = js/caption.js
 stylesheets[all][] = gsb-wysiwyg.css
 datestamp = 1369070369
 features[ctools][] = linkit:linkit_profiles:1
