@@ -32,31 +32,31 @@ function gsb_feature_wysiwyg_filter_default_formats() {
         ),
       ),
       'caption_filter' => array(
-        'weight' => -48,
-        'status' => 1,
-        'settings' => array(),
-      ),
-      'media_filter' => array(
-        'weight' => -47,
+        'weight' => -49,
         'status' => 1,
         'settings' => array(),
       ),
       'filter_htmlcorrector' => array(
-        'weight' => -46,
+        'weight' => -48,
         'status' => 1,
         'settings' => array(),
       ),
       'filter_autop' => array(
-        'weight' => -45,
+        'weight' => -47,
         'status' => 1,
         'settings' => array(),
       ),
       'filter_url' => array(
-        'weight' => -44,
+        'weight' => -46,
         'status' => 1,
         'settings' => array(
           'filter_url_length' => 72,
         ),
+      ),
+      'media_filter' => array(
+        'weight' => -45,
+        'status' => 1,
+        'settings' => array(),
       ),
     ),
   );
@@ -83,40 +83,40 @@ function gsb_feature_wysiwyg_filter_default_formats() {
         ),
       ),
       'caption_filter' => array(
-        'weight' => -48,
-        'status' => 1,
-        'settings' => array(),
-      ),
-      'media_filter' => array(
-        'weight' => -47,
+        'weight' => -49,
         'status' => 1,
         'settings' => array(),
       ),
       'filter_htmlcorrector' => array(
-        'weight' => -46,
+        'weight' => -48,
         'status' => 1,
         'settings' => array(),
       ),
       'filter_autop' => array(
-        'weight' => -45,
+        'weight' => -47,
         'status' => 1,
         'settings' => array(),
       ),
       'filter_url' => array(
-        'weight' => -44,
+        'weight' => -46,
         'status' => 1,
         'settings' => array(
           'filter_url_length' => 72,
         ),
       ),
       'filter_html' => array(
-        'weight' => -10,
+        'weight' => -45,
         'status' => 1,
         'settings' => array(
           'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <div> <p> <br> <i> <u> <cite> <hr> <sub> <sup> <table> <tbody> <thead> <th> <tr> <td> <span> <h1> <h2> <h3> <h4> <h5> <h6> <object> <iframe> <area> <embed> <address> <abbr> <caption> <pre> <code> <script> <img>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),
+      ),
+      'media_filter' => array(
+        'weight' => -44,
+        'status' => 1,
+        'settings' => array(),
       ),
     ),
   );
