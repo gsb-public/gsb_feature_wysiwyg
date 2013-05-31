@@ -105,7 +105,8 @@ function gsb_feature_wysiwyg_wysiwyg_default_profiles() {
       'block_formats' => 'p,address,pre,h2,h3,h4,h5,h6,div',
       'css_setting' => 'theme',
       'css_path' => '',
-      'css_classes' => 'Accordion Title=p.acc-title
+      'css_classes' => 'Paragraph=p
+Accordion Title=p.acc-title
 Accordion Body=p.acc-body
 Caption Left=div.caption-left
 Caption Right=div.caption-right
