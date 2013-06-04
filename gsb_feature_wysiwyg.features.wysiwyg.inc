@@ -112,12 +112,12 @@ Caption Left=div.caption-left
 Caption Right=div.caption-right
 Intro Copy=p.intro-copy
 Quote=div.callout
-Quote Author=p.callout-author
 Heading H2=h2
 Heading H3=h3
 Heading H4=h4
 Heading H5=h5
-Heading H6=h6',
+Heading H6=h6
+Line break=br',
     ),
   );
 
