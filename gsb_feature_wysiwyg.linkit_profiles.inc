@@ -91,6 +91,7 @@ function gsb_feature_wysiwyg_default_linkit_profiles() {
   $linkit_profile->role_rids = array(
     3 => 1,
     4 => 1,
+    5 => 1,
   );
   $linkit_profile->weight = 0;
   $export['content_editors'] = $linkit_profile;
