@@ -106,6 +106,7 @@ function gsb_feature_wysiwyg_wysiwyg_default_profiles() {
       'css_setting' => 'theme',
       'css_path' => '',
       'css_classes' => '
+Paragraph=p.paragraph
 Accordion Body=p.acc-body
 Accordion Title=p.acc-title
 Heading H2=h2
