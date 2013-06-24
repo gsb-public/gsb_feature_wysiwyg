@@ -25,6 +25,8 @@ function gsb_feature_wysiwyg_defaultconfig_user_default_permissions() {
   $permissions['use text format gsb_html_text'] = array(
     'name' => 'use text format gsb_html_text',
     'roles' => array(
+      'AA' => 'AA',
+      'FA' => 'FA',
       'administrator' => 'administrator',
       'section editor' => 'section editor',
       'section manager' => 'section manager',
@@ -36,10 +38,10 @@ function gsb_feature_wysiwyg_defaultconfig_user_default_permissions() {
   $permissions['use text format gsb_wysiwyg_text'] = array(
     'name' => 'use text format gsb_wysiwyg_text',
     'roles' => array(
-      'aa' => 'aa',
+      'AA' => 'AA',
+      'FA' => 'FA',
       'administrator' => 'administrator',
       'cwo_admin' => 'cwo_admin',
-      'fa' => 'fa',
       'section editor' => 'section editor',
       'section manager' => 'section manager',
     ),
