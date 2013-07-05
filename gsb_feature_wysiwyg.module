@@ -172,4 +172,11 @@ function gsb_feature_wysiwyg_wysiwyg_editor_settings_alter(&$settings, $context)
 
   // Enable Spell check as you type automatically.
   $settings['scayt_autoStartup'] = TRUE;
+  
+  // stop ckeditor from encoding 
+  // example - the text what's was being changed 
+  // from what's to what&#39;s
+  // adding this setting stopped this encoding.
+  $settings['entities'] = FALSE;
+  
 }
