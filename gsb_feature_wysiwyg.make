@@ -32,5 +32,5 @@ libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEdi
 
 ; Features Override
 
-projects[features_override][version] = 2.0-beta2
+projects[features_override][version] = 2.0-beta3
 projects[features_override][subdir] = contrib
