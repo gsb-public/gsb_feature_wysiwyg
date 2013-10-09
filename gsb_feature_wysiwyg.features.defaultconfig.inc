@@ -21,27 +21,30 @@ function gsb_feature_wysiwyg_defaultconfig_features() {
 function gsb_feature_wysiwyg_defaultconfig_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: use text format gsb_html_text.
+  // Exported permission: 'use text format gsb_html_text'.
   $permissions['use text format gsb_html_text'] = array(
     'name' => 'use text format gsb_html_text',
     'roles' => array(
-      'AA' => 'AA',
-      'FA' => 'FA',
+      'aa' => 'aa',
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'fa' => 'fa',
+      'marketing_admin' => 'marketing_admin',
       'section editor' => 'section editor',
       'section manager' => 'section manager',
     ),
     'module' => 'filter',
   );
 
-  // Exported permission: use text format gsb_wysiwyg_text.
+  // Exported permission: 'use text format gsb_wysiwyg_text'.
   $permissions['use text format gsb_wysiwyg_text'] = array(
     'name' => 'use text format gsb_wysiwyg_text',
     'roles' => array(
-      'AA' => 'AA',
-      'FA' => 'FA',
+      'aa' => 'aa',
       'administrator' => 'administrator',
-      'cwo_admin' => 'cwo_admin',
+      'editor' => 'editor',
+      'fa' => 'fa',
+      'marketing_admin' => 'marketing_admin',
       'section editor' => 'section editor',
       'section manager' => 'section manager',
     ),
