@@ -180,3 +180,42 @@ function gsb_feature_wysiwyg_wysiwyg_editor_settings_alter(&$settings, $context)
   $settings['entities'] = FALSE;
   
 }
+
+/**
+ * Implements hook_filter_info().
+ */
+function gsb_feature_wysiwyg_filter_info() {
+
+  $filters['gsb_filter_strip'] = array(
+    'title' =>  t('GSB Filter - Strip non-blank-space paragraphs'),
+    'process callback' => '_gsb_feature_wysiwyg_filter_strip',
+    'weight' => 10,
+  );
+
+  return $filters;
+
+}
+
+/**
+ * Filter string paragraphs with &nbsp;
+ *    <p>&nbsp;</p>
+ */
+function _gsb_feature_wysiwyg_filter_strip($text) {
+
+  $chunks = preg_split('@(<!--.*?-->|</?(?:pre|script|style|object|iframe|!--)[^>]*>)@i', $text, -1, PREG_SPLIT_DELIM_CAPTURE);
+
+  $output = '';
+  foreach ($chunks as $i => $chunk) {
+    $pos = strpos($chunk, "\xc2\xa0");
+    if ($pos !== false) {
+      $chunk= preg_replace("/\xa0/"," ",$chunk);
+      $chunk= preg_replace("/\xc2/"," ",$chunk);
+      $chunk = str_replace('<p>  </p>', '', $chunk);    
+    }
+    $output .= $chunk;
+  }
+  
+  return $output;
+
+}
+
