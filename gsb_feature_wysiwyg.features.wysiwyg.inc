@@ -70,8 +70,7 @@ function gsb_feature_wysiwyg_wysiwyg_default_profiles() {
       'block_formats' => 'p,address,pre,h2,h3,h4,h5,h6,div',
       'css_setting' => 'theme',
       'css_path' => '',
-      'css_classes' => '
-Paragraph=p.paragraph
+      'css_classes' => 'Paragraph=p.paragraph
 Accordion Body=p.acc-body
 Accordion Title=p.acc-title
 Heading H2=h2
@@ -80,7 +79,10 @@ Heading H4=h4
 Heading H5=h5
 Heading H6=h6
 Intro Copy=p.intro-copy
-Quote=div.callout',
+Quote=div.callout
+Image float left=img.caption-left
+Image float right=img.caption-right
+Footnote=p.footnote',
     ),
   );
 
