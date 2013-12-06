@@ -197,25 +197,10 @@ function gsb_feature_wysiwyg_filter_info() {
 }
 
 /**
- * Filter string paragraphs with &nbsp;
- *    <p>&nbsp;</p>
+ * Filter string paragraphs with &nbsp; and whitespaces only.
+ * Examples:
+ *  "<p>&nbsp;</p>", "<p>&nbsp; </p>", "<p> </p>"
  */
 function _gsb_feature_wysiwyg_filter_strip($text) {
-
-  $chunks = preg_split('@(<!--.*?-->|</?(?:pre|script|style|object|iframe|!--)[^>]*>)@i', $text, -1, PREG_SPLIT_DELIM_CAPTURE);
-
-  $output = '';
-  foreach ($chunks as $i => $chunk) {
-    $pos = strpos($chunk, "\xc2\xa0");
-    if ($pos !== false) {
-      $chunk= preg_replace("/\xa0/"," ",$chunk);
-      $chunk= preg_replace("/\xc2/"," ",$chunk);
-      $chunk = str_replace('<p>  </p>', '', $chunk);    
-    }
-    $output .= $chunk;
-  }
-  
-  return $output;
-
+  return preg_replace('~<p>[\x{00a0}|\s]*</p>~siu', '', $text);
 }
-
