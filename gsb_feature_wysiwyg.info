@@ -8,7 +8,6 @@ dependencies[] = caption_filter
 dependencies[] = ctools
 dependencies[] = defaultconfig
 dependencies[] = features
-dependencies[] = features_override
 dependencies[] = filter
 dependencies[] = image_resize_filter
 dependencies[] = linkit
