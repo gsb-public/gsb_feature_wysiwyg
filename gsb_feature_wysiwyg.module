@@ -16,6 +16,18 @@ function gsb_feature_wysiwyg_apps_app_info() {
 }
 
 /**
+ * Implement hook_permission.
+ */
+function gsb_feature_wysiwyg_permission() {
+  return array(
+    'choose text format' => array(
+      'title' => t('Choose text format'),
+      'description' => t('Allow the user to choose a text format in text areas.'),
+    ),
+  );
+}
+
+/**
  * Configuration Form for GSB WYSIWYG
  */
 function gsb_feature_wysiwyg_configure_form($form, &$form_state) {
@@ -99,7 +111,16 @@ function gsb_feature_wysiwyg_filter_process_format($element) {
   // Also format this all a bit different so that it looks right
   if (!variable_get('gsb_feature_wysiwyg_show_format_details', FALSE)) {
     $element['format']['#weight'] = 1;
-    $element['format']['#prefix'] = '<div class="format-toggle">';
+
+    // Start building our classes for the wrapper.
+    $classes[] = 'format-toggle';
+
+    // We need to use css to hide the format chooser because wysiwyg module
+    // doesn't work if #access = FALSE.
+    if (!user_access('choose text format')) {
+      $classes[] = 'element-hidden';
+    }
+    $element['format']['#prefix'] = '<div class="' . implode(' ', $classes) . '">';
     $element['format']['#suffix'] = '</div><div class="clearfix"></div>';
     unset($element['format']['#type']);
     $element['format']['format']['#title'] = 'Editor: ';
