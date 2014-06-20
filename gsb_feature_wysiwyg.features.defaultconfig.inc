@@ -55,7 +55,7 @@ function gsb_feature_wysiwyg_defaultconfig_user_default_permissions() {
   $permissions['use text format markdown'] = array(
     'name' => 'use text format markdown',
     'roles' => array(
-      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'filter',
   );
