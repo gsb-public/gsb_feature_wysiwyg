@@ -51,5 +51,14 @@ function gsb_feature_wysiwyg_defaultconfig_user_default_permissions() {
     'module' => 'filter',
   );
 
+  // Exported permission: 'use text format markdown'.
+  $permissions['use text format markdown'] = array(
+    'name' => 'use text format markdown',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'filter',
+  );
+
   return $permissions;
 }
