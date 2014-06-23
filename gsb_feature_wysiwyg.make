@@ -32,6 +32,10 @@ projects[caption_filter][patch][1432092] = http://drupal.org/files/1432092-butto
 libraries[ckeditor][download][type] = get
 libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.6/ckeditor_3.6.6.zip
 
+libraries[markitup][download][type] = get
+libraries[markitup][download][url] = https://github.com/markitup/1.x/archive/1.1.14.zip
+
+
 ; Features Override
 
 projects[features_override][version] = 2.0-rc1
