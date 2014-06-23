@@ -10,6 +10,7 @@ projects[wysiwyg][subdir] = contrib
 projects[wysiwyg][download][type] = git
 projects[wysiwyg][download][revision] = 40b26a1
 projects[wysiwyg][download][branch] = 7.x-2.x
+projects[wysiwyg][patch][397994] = https://www.drupal.org/files/397994_markitup-markdown_22.patch.txt
 
 projects[wysiwyg_filter][version] = 1.6-rc2
 projects[wysiwyg_filter][subdir] = contrib
