@@ -34,7 +34,7 @@ libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEdi
 
 libraries[markitup][download][type] = get
 libraries[markitup][download][url] = https://github.com/markitup/1.x/archive/1.1.14.zip
-
+libraries[markitup][patch][add-sets-to-markdown] = https://raw.githubusercontent.com/gsbitse/gsb-revamp-patches/master/wp-3805-add_markdown_sets.patch
 
 ; Features Override
 
