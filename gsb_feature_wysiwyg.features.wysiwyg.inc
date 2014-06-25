@@ -86,5 +86,36 @@ Footnote=p.footnote',
     ),
   );
 
+  // Exported profile: markdown
+  $profiles['markdown'] = array(
+    'format' => 'markdown',
+    'editor' => 'markitup',
+    'settings' => array(
+      'default' => 1,
+      'user_choose' => 0,
+      'show_toggle' => 0,
+      'theme' => '',
+      'language' => 'en',
+      'buttons' => array(
+        'default' => array(
+          'h2' => 1,
+          'h3' => 1,
+          'h4' => 1,
+          'bold' => 1,
+          'italic' => 1,
+          'ul' => 1,
+          'ol' => 1,
+          'link' => 1,
+          'image' => 1,
+          'quotes' => 1,
+        ),
+      ),
+      'markup_type' => 'markdown',
+      'css_setting' => 'theme',
+      'css_path' => '',
+      'advanced__active_tab' => 'edit-basic',
+    ),
+  );
+
   return $profiles;
 }

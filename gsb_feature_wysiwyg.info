@@ -36,3 +36,4 @@ features[user_permission][] = use text format markdown
 features[variable][] = media__wysiwyg_allowed_types
 features[variable][] = media__wysiwyg_browser_plugins
 features[wysiwyg][] = gsb_wysiwyg_text
+features[wysiwyg][] = markdown
