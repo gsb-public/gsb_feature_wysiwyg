@@ -10,7 +10,7 @@ projects[wysiwyg][subdir] = contrib
 projects[wysiwyg][download][type] = git
 projects[wysiwyg][download][revision] = 40b26a1
 projects[wysiwyg][download][branch] = 7.x-2.x
-projects[wysiwyg][patch][397994] = https://www.drupal.org/files/397994_markitup-markdown_22.patch.txt
+projects[wysiwyg][patch][397994] = https://www.drupal.org/files/issues/397994-d7-32.patch
 
 projects[wysiwyg_filter][version] = 1.6-rc2
 projects[wysiwyg_filter][subdir] = contrib
@@ -34,7 +34,11 @@ libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEdi
 
 libraries[markitup][download][type] = get
 libraries[markitup][download][url] = https://github.com/markitup/1.x/archive/1.1.14.zip
-libraries[markitup][patch][add-sets-to-markdown] = https://raw.githubusercontent.com/gsbitse/gsb-revamp-patches/master/wp-3805-add_markdown_sets.patch
+;libraries[markitup][patch][add-sets-to-markdown] = https://raw.githubusercontent.com/gsbitse/gsb-revamp-patches/master/wp-3805-add_markdown_sets.patch
+
+libraries[markdown][download][type] = get
+libraries[markdown][download][url] = http://markitup.jaysalvat.com/downloads/download.php?id=markupsets/markdown
+libraries[markdown][download][destination] = libraries/markitup/markitup/sets/markdown
 
 ; Features Override
 
