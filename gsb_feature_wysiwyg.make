@@ -38,7 +38,7 @@ libraries[markitup][download][url] = https://github.com/markitup/1.x/archive/1.1
 
 libraries[markdown][download][type] = get
 libraries[markdown][download][url] = http://markitup.jaysalvat.com/downloads/download.php?id=markupsets/markdown
-libraries[markdown][download][destination] = libraries/markitup/markitup/sets/markdown
+libraries[markdown][destination] = libraries/markitup/markitup/sets/markdown
 
 ; Features Override
 
