@@ -1,0 +1,5 @@
+<?php
+
+function gsb_feature_wysiwyg_update_7001() {
+  module_enable(array('footnotes', 'footnotes_wysiwyg'));
+}
