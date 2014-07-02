@@ -27,6 +27,13 @@ projects[caption_filter][version] = 1.2
 projects[caption_filter][subdir] = contrib
 projects[caption_filter][patch][1432092] = http://drupal.org/files/1432092-button-and-image.patch
 
+projects[footnotes][version] = 2.x-dev
+projects[footnotes][subdir] = contrib
+projects[footnotes][download][type] = git
+projects[footnotes][download][revision] = 7b12c77
+projects[footnotes][download][branch] = 7.x-2.x
+projects[footnotes][patch][2296211] = https://www.drupal.org/files/issues/2296211-d7-1.patch
+
 ; Include our Editors
 
 libraries[ckeditor][download][type] = get
