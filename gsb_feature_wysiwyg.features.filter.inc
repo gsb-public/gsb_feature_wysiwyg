@@ -205,6 +205,13 @@ function gsb_feature_wysiwyg_filter_default_formats() {
           'filter_html_nofollow' => 0,
         ),
       ),
+      'filter_footnotes' => array(
+        'weight' => -20,
+        'status' => 1,
+        'settings' => array(
+          'footnotes_collapse' => 0,
+        ),
+      ),
     ),
   );
 
