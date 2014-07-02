@@ -32,7 +32,7 @@ projects[footnotes][subdir] = contrib
 projects[footnotes][download][type] = git
 projects[footnotes][download][revision] = 7b12c77
 projects[footnotes][download][branch] = 7.x-2.x
-projects[footnotes][patch][2296211] = https://www.drupal.org/files/issues/2296211-d7-1.patch
+projects[footnotes][patch][2296211] = https://www.drupal.org/files/issues/2296211-d7-2.patch
 
 ; Include our Editors
 
