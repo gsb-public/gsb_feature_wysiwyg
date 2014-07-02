@@ -70,7 +70,7 @@ function gsb_feature_wysiwyg_wysiwyg_default_profiles() {
       'block_formats' => 'p,address,pre,h2,h3,h4,h5,h6,div',
       'css_setting' => 'theme',
       'css_path' => '',
-      'css_classes' => 'Paragraph=p.paragraph
+      'stylesSet' => 'Paragraph=p.paragraph
 Accordion Body=p.acc-body
 Accordion Title=p.acc-title
 Heading H2=h2
