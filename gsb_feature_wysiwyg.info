@@ -18,6 +18,7 @@ dependencies[] = media
 dependencies[] = media_internet
 dependencies[] = media_vimeo
 dependencies[] = media_youtube
+dependencies[] = resources
 dependencies[] = strongarm
 dependencies[] = typogrify
 dependencies[] = wysiwyg
