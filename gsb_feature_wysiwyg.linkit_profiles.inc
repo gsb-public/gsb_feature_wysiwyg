@@ -81,7 +81,6 @@ function gsb_feature_wysiwyg_default_linkit_profiles() {
     'entity:taxonomy_term' => array(
       'result_description' => '',
       'bundles' => array(
-        'panopoly_categories' => 0,
         'academic_area' => 0,
         'business_insight_topic' => 0,
         'centers_research_programs' => 0,
