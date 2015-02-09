@@ -139,7 +139,7 @@ function gsb_feature_wysiwyg_module_implements_alter(&$implementations, $hook) {
     $group = $implementations['gsb_feature_wysiwyg'];
     unset($implementations['gsb_feature_wysiwyg']);
     $implementations['gsb_feature_wysiwyg'] = $group;
-  }  
+  }
 }
 
 /**
@@ -147,11 +147,12 @@ function gsb_feature_wysiwyg_module_implements_alter(&$implementations, $hook) {
  */
 function gsb_feature_wysiwyg_wysiwyg_editor_settings_alter(&$settings, $context) {
 
-   if (isset($settings['toolbar'][0])) {
+  // If there is a toolbar, then arrange the buttons in a specific order
+  if (isset($settings['toolbar'][0])) {
 
     unset($settings['toolbar'][0]);
 
-    $settings['toolbar'][0] = array(
+    $button_defaults = array(
       "Bold",
       "Italic",
       "Styles",
@@ -168,12 +169,12 @@ function gsb_feature_wysiwyg_wysiwyg_editor_settings_alter(&$settings, $context)
       "Link",
       "Unlink",
       "Anchor",
-      "linkit",      
+      "linkit",
       "-",
       "Image",
       "Superscript",
-      "Blockquote",      
-      "SpecialChar",      
+      "Blockquote",
+      "SpecialChar",
       "Source",
       "HorizontalRule",
       "-",
@@ -189,17 +190,51 @@ function gsb_feature_wysiwyg_wysiwyg_editor_settings_alter(&$settings, $context)
       "media"
     );
 
+    // Remove any buttons that are not enabled
+    foreach ($button_defaults as $key => $button) {
+      if ($button != '-' && !in_array($button, array_keys($context['profile']->settings['buttons']['default']))) {
+        unset($button_defaults[$key]);
+      }
+    }
+
+    // Remove any separators that have no items between them
+    $last_is_separator = FALSE;
+    foreach ($button_defaults as $key => $button) {
+      if ($button == '-') {
+        if ($last_is_separator) {
+          unset($button_defaults[$key]);
+        }
+        $last_is_separator = TRUE;
+      }
+      else {
+        $last_is_separator = FALSE;
+      }
+    }
+
+    $button_defaults = array_values($button_defaults);
+
+    // If we have a separator as the first item, then remove it
+    if ($button_defaults[0] == '-') {
+      unset($button_defaults[0]);
+    }
+    // If we have a separator as the last item, then remove it
+    if ($button_defaults[count($button_defaults)] == '-') {
+      unset($button_defaults[count($button_defaults)]);
+    }
+
+    $settings['toolbar'][0] = array_values($button_defaults);
+
   }
 
   // Enable Spell check as you type automatically.
   $settings['scayt_autoStartup'] = TRUE;
-  
-  // stop ckeditor from encoding 
-  // example - the text what's was being changed 
+
+  // stop ckeditor from encoding
+  // example - the text what's was being changed
   // from what's to what&#39;s
   // adding this setting stopped this encoding.
   $settings['entities'] = FALSE;
-  
+
 }
 
 /**
