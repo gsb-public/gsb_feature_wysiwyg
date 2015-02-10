@@ -218,8 +218,8 @@ function gsb_feature_wysiwyg_wysiwyg_editor_settings_alter(&$settings, $context)
       unset($button_defaults[0]);
     }
     // If we have a separator as the last item, then remove it
-    if ($button_defaults[count($button_defaults)] == '-') {
-      unset($button_defaults[count($button_defaults)]);
+    if ($button_defaults[count($button_defaults)-1] == '-') {
+      unset($button_defaults[count($button_defaults)-1]);
     }
 
     $settings['toolbar'][0] = array_values($button_defaults);
