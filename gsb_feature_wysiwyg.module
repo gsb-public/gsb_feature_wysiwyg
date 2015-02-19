@@ -190,9 +190,15 @@ function gsb_feature_wysiwyg_wysiwyg_editor_settings_alter(&$settings, $context)
       "media"
     );
 
+    // Get the current settings for the buttons (the enabled buttons)
+    $current_settings = array();
+    foreach($context['profile']->settings['buttons'] as $buttons) {
+      $current_settings = array_merge($current_settings, array_keys($buttons));
+    }
+
     // Remove any buttons that are not enabled
     foreach ($button_defaults as $key => $button) {
-      if ($button != '-' && !in_array($button, array_keys($context['profile']->settings['buttons']['default']))) {
+      if ($button != '-' && !in_array($button, $current_settings)) {
         unset($button_defaults[$key]);
       }
     }
