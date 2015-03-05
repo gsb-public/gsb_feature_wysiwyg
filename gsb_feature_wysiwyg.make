@@ -37,7 +37,7 @@ projects[footnotes][patch][2296211] = https://www.drupal.org/files/issues/229621
 ; Include our Editors
 
 libraries[ckeditor][download][type] = get
-libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.6/ckeditor_3.6.6.zip
+libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.4.7/ckeditor_4.4.7_standard.zip
 
 libraries[markitup][download][type] = get
 libraries[markitup][download][url] = https://github.com/markitup/1.x/archive/1.1.14.zip
