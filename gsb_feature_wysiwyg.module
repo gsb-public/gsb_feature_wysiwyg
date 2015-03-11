@@ -266,3 +266,12 @@ function gsb_feature_wysiwyg_filter_info() {
 function _gsb_feature_wysiwyg_filter_strip($text) {
   return preg_replace('~<p>[\x{00a0}|\s]*</p>~siu', '', $text);
 }
+
+/**
+ * Implements hook_wysiwyg_editor_settings_alter().
+ */
+function gsb_feature_wysiwyg_wysiwyg_editor_settings_alter(&$settings, $context) {
+  if ($context['profile']->editor == 'ckeditor') {
+    $settings['allowedContent'] = TRUE;
+  }
+}
