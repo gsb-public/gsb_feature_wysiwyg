@@ -39,8 +39,9 @@ projects[footnotes][patch][2296211] = https://www.drupal.org/files/issues/229621
 libraries[ckeditor][download][type] = get
 libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.4.7/ckeditor_4.4.7_standard.zip
 
-libraries[markitup][download][type] = get
-libraries[markitup][download][url] = https://github.com/markitup/1.x/archive/1.1.14.zip
+libraries[markitup][download][type] = git
+libraries[markitup][download][url] = https://github.com/markitup/1.x.git
+libraries[markitup][download][tag] = 1.14
 libraries[markitup][patch][WP-5186] = https://raw.githubusercontent.com/gsb-public/gsb-revamp-patches/master/WP-5186-jquery-markitup.js.patch
 
 libraries[markdown][download][type] = get
