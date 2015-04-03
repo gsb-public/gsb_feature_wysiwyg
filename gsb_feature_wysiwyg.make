@@ -41,7 +41,7 @@ libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEdi
 
 libraries[markitup][download][type] = git
 libraries[markitup][download][url] = https://github.com/markitup/1.x.git
-libraries[markitup][download][tag] = 1.14
+libraries[markitup][download][tag] = 1.1.14
 libraries[markitup][patch][WP-5186] = https://raw.githubusercontent.com/gsb-public/gsb-revamp-patches/master/WP-5186-jquery-markitup.js.patch
 
 libraries[markdown][download][type] = get
