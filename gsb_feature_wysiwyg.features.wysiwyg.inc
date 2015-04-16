@@ -120,5 +120,31 @@ Footnote=p.footnote',
     ),
   );
 
+  // Exported profile: sidebar
+  $profiles['sidebar'] = array(
+    'format' => 'sidebar',
+    'editor' => 'markitup',
+    'settings' => array(
+      'default' => 1,
+      'user_choose' => 0,
+      'show_toggle' => 0,
+      'theme' => '',
+      'language' => 'en',
+      'buttons' => array(
+        'default' => array(
+          'bold' => 1,
+          'italic' => 1,
+          'ul' => 1,
+          'ol' => 1,
+          'link' => 1,
+        ),
+      ),
+      'set' => 'default',
+      'css_setting' => 'theme',
+      'css_path' => '',
+      'advanced__active_tab' => 'edit-basic',
+    ),
+  );
+
   return $profiles;
 }

@@ -178,6 +178,7 @@ function gsb_feature_wysiwyg_filter_default_formats() {
             '&gt;&gt;' => 0,
           ),
           'space_to_nbsp' => 0,
+          'space_hyphens' => 0,
         ),
       ),
     ),
@@ -216,6 +217,26 @@ function gsb_feature_wysiwyg_filter_default_formats() {
         'weight' => 2,
         'status' => 1,
         'settings' => array(),
+      ),
+    ),
+  );
+
+  // Exported format: Sidebar.
+  $formats['sidebar'] = array(
+    'format' => 'sidebar',
+    'name' => 'Sidebar',
+    'cache' => 1,
+    'status' => 1,
+    'weight' => 0,
+    'filters' => array(
+      'filter_html' => array(
+        'weight' => -10,
+        'status' => 1,
+        'settings' => array(
+          'allowed_html' => '<a> <p> <ul> <ol> <li> <strong> <i>',
+          'filter_html_help' => 1,
+          'filter_html_nofollow' => 0,
+        ),
       ),
     ),
   );
