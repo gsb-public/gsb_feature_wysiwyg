@@ -19,5 +19,14 @@ function gsb_feature_wysiwyg_user_default_permissions() {
     'module' => 'filter',
   );
 
+  // Exported permission: 'use text format sidebar'.
+  $permissions['use text format sidebar'] = array(
+    'name' => 'use text format sidebar',
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'filter',
+  );
+
   return $permissions;
 }

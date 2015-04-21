@@ -35,6 +35,7 @@ features[filter][] = markdown
 features[filter][] = sidebar
 features[linkit_profiles][] = content_editors
 features[user_permission][] = use text format markdown
+features[user_permission][] = use text format sidebar
 features[variable][] = media__wysiwyg_allowed_types
 features[variable][] = media__wysiwyg_browser_plugins
 features[wysiwyg][] = gsb_wysiwyg_text
