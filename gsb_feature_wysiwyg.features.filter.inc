@@ -124,8 +124,10 @@ function gsb_feature_wysiwyg_filter_default_formats() {
         'settings' => array(
           'smartypants_enabled' => 1,
           'smartypants_hyphens' => 2,
+          'space_hyphens' => 0,
           'wrap_ampersand' => 0,
           'widont_enabled' => 0,
+          'space_to_nbsp' => 0,
           'hyphenate_shy' => 0,
           'wrap_abbr' => 0,
           'wrap_caps' => 0,
@@ -177,8 +179,26 @@ function gsb_feature_wysiwyg_filter_default_formats() {
             '&lt;&lt;' => 0,
             '&gt;&gt;' => 0,
           ),
-          'space_to_nbsp' => 0,
-          'space_hyphens' => 0,
+        ),
+      ),
+    ),
+  );
+
+  // Exported format: Image Text Equivalent.
+  $formats['image_text_equivalent'] = array(
+    'format' => 'image_text_equivalent',
+    'name' => 'Image Text Equivalent',
+    'cache' => 1,
+    'status' => 1,
+    'weight' => 0,
+    'filters' => array(
+      'filter_html' => array(
+        'weight' => -10,
+        'status' => 1,
+        'settings' => array(
+          'allowed_html' => '<h3> <h4> <p> <strong> <i> <ul> <ol> <li> <dl> <dt> <dd>',
+          'filter_html_help' => 1,
+          'filter_html_nofollow' => 0,
         ),
       ),
     ),
