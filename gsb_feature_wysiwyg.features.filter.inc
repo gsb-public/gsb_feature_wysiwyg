@@ -192,8 +192,13 @@ function gsb_feature_wysiwyg_filter_default_formats() {
     'status' => 1,
     'weight' => 0,
     'filters' => array(
+      'filter_markdown' => array(
+        'weight' => -49,
+        'status' => 1,
+        'settings' => array(),
+      ),
       'filter_html' => array(
-        'weight' => -10,
+        'weight' => -48,
         'status' => 1,
         'settings' => array(
           'allowed_html' => '<h3> <h4> <p> <strong> <i> <ul> <ol> <li> <sup>',
