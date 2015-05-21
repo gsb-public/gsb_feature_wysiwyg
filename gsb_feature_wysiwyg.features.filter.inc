@@ -103,7 +103,7 @@ function gsb_feature_wysiwyg_filter_default_formats() {
         'weight' => -45,
         'status' => 1,
         'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <div> <p> <br> <i> <u> <cite> <hr> <sub> <sup> <table> <tbody> <thead> <th> <tr> <td> <span> <h1> <h2> <h3> <h4> <h5> <h6> <object> <iframe> <area> <embed> <address> <abbr> <caption> <pre> <code> <script> <img>',
+          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <div> <p> <br> <i> <u> <cite> <hr> <sub> <sup> <table> <tbody> <thead> <th> <tr> <td> <span> <h1> <h2> <h3> <h4> <h5> <h6> <object> <iframe> <area> <embed> <address> <abbr> <caption> <pre> <code> <script> <img> <b> ',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),
@@ -124,8 +124,10 @@ function gsb_feature_wysiwyg_filter_default_formats() {
         'settings' => array(
           'smartypants_enabled' => 1,
           'smartypants_hyphens' => 2,
+          'space_hyphens' => 0,
           'wrap_ampersand' => 0,
           'widont_enabled' => 0,
+          'space_to_nbsp' => 0,
           'hyphenate_shy' => 0,
           'wrap_abbr' => 0,
           'wrap_caps' => 0,
@@ -177,8 +179,6 @@ function gsb_feature_wysiwyg_filter_default_formats() {
             '&lt;&lt;' => 0,
             '&gt;&gt;' => 0,
           ),
-          'space_to_nbsp' => 0,
-          'space_hyphens' => 0,
         ),
       ),
     ),
