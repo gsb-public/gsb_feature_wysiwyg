@@ -35,6 +35,7 @@ features[filter][] = image_text_equivalent
 features[filter][] = markdown
 features[filter][] = sidebar
 features[linkit_profiles][] = content_editors
+features[user_permission][] = use text format image_text_equivalent
 features[user_permission][] = use text format markdown
 features[user_permission][] = use text format sidebar
 features[variable][] = media__wysiwyg_allowed_types
