@@ -268,7 +268,7 @@ function gsb_feature_wysiwyg_filter_default_formats() {
         'weight' => -48,
         'status' => 1,
         'settings' => array(
-          'allowed_html' => '<a> <p> <ul> <ol> <li> <strong> <i>',
+          'allowed_html' => '<a> <p> <ul> <ol> <li> <strong> <i> <em>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),
