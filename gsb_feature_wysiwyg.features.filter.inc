@@ -231,7 +231,7 @@ function gsb_feature_wysiwyg_filter_default_formats() {
         'weight' => -49,
         'status' => 1,
         'settings' => array(
-          'allowed_html' => '<h2> <h3> <h4> <a> <em> <strong> <blockquote> <ul> <ol> <li> <p> <sup>',
+          'allowed_html' => '<h2> <h3> <h4> <a> <em> <strong> <blockquote> <ul> <ol> <li> <p> <sup> <table> <th> <td> <tr> <thead>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),
