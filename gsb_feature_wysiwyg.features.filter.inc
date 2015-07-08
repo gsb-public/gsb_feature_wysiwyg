@@ -251,6 +251,38 @@ function gsb_feature_wysiwyg_filter_default_formats() {
     ),
   );
 
+  // Exported format: Markdown Lite (minus Resources).
+  $formats['markdown_lite_minus_resources'] = array(
+    'format' => 'markdown_lite_minus_resources',
+    'name' => 'Markdown Lite (minus Resources)',
+    'cache' => 1,
+    'status' => 1,
+    'weight' => 0,
+    'filters' => array(
+      'filter_markdown' => array(
+        'weight' => -50,
+        'status' => 1,
+        'settings' => array(),
+      ),
+      'filter_html' => array(
+        'weight' => -49,
+        'status' => 1,
+        'settings' => array(
+          'allowed_html' => '<h2> <h3> <h4> <a> <em> <strong> <blockquote> <ul> <ol> <li> <p> <sup> <table> <tbody> <th> <td> <tr> <thead>',
+          'filter_html_help' => 1,
+          'filter_html_nofollow' => 0,
+        ),
+      ),
+      'filter_footnotes' => array(
+        'weight' => -48,
+        'status' => 1,
+        'settings' => array(
+          'footnotes_collapse' => 0,
+        ),
+      ),
+    ),
+  );
+
   // Exported format: Sidebar.
   $formats['sidebar'] = array(
     'format' => 'sidebar',
