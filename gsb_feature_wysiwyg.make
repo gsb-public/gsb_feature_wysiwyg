@@ -20,7 +20,7 @@ projects[wysiwyg_filter][subdir] = contrib
 projects[linkit][version] = 2.7
 projects[linkit][subdir] = contrib
 
-projects[image_resize_filter][version] = 1.14
+projects[image_resize_filter][version] = 1.16
 projects[image_resize_filter][subdir] = contrib
 
 projects[caption_filter][version] = 1.2
