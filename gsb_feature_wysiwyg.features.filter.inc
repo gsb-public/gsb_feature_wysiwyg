@@ -103,7 +103,7 @@ function gsb_feature_wysiwyg_filter_default_formats() {
         'weight' => -45,
         'status' => 1,
         'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <div> <p> <br> <i> <u> <cite> <hr> <sub> <sup> <table> <tbody> <thead> <th> <tr> <td> <span> <h1> <h2> <h3> <h4> <h5> <h6> <object> <iframe> <area> <embed> <address> <abbr> <caption> <pre> <code> <script> <img> <b> ',
+          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <div> <p> <br> <i> <u> <cite> <hr> <sub> <sup> <table> <tbody> <thead> <tfoot> <th> <tr> <td> <span> <h1> <h2> <h3> <h4> <h5> <h6> <object> <iframe> <area> <embed> <address> <abbr> <caption> <pre> <code> <script> <img> <b> ',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),
