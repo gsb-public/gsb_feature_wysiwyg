@@ -40,6 +40,7 @@ features[linkit_profiles][] = content_editors
 features[user_permission][] = use text format image_text_equivalent
 features[user_permission][] = use text format markdown
 features[user_permission][] = use text format markdown_lite_minus_resources
+features[user_permission][] = use text format paragraphed_plain_text
 features[user_permission][] = use text format sidebar
 features[variable][] = media__wysiwyg_allowed_types
 features[variable][] = media__wysiwyg_browser_plugins
