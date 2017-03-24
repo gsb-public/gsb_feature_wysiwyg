@@ -243,6 +243,11 @@ function gsb_feature_wysiwyg_filter_default_formats() {
           'footnotes_collapse' => 0,
         ),
       ),
+      'filter_autop' => array(
+        'weight' => 0,
+        'status' => 1,
+        'settings' => array(),
+      ),
       'resources_filter' => array(
         'weight' => 2,
         'status' => 1,
