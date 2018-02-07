@@ -23,9 +23,8 @@ projects[linkit][subdir] = contrib
 projects[image_resize_filter][version] = 1.16
 projects[image_resize_filter][subdir] = contrib
 
-projects[caption_filter][version] = 1.2
+projects[caption_filter][version] = 1.3
 projects[caption_filter][subdir] = contrib
-projects[caption_filter][patch][1432092] = http://drupal.org/files/1432092-button-and-image.patch
 
 projects[footnotes][version] = 2.x-dev
 projects[footnotes][subdir] = contrib
