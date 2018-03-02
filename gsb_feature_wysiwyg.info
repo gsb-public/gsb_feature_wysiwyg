@@ -22,7 +22,6 @@ dependencies[] = resources
 dependencies[] = strongarm
 dependencies[] = typogrify
 dependencies[] = wysiwyg
-stylesheets[all][] = gsb-wysiwyg.css
 datestamp = 1454632287
 features[ctools][] = linkit:linkit_profiles:1
 features[ctools][] = strongarm:strongarm:1
