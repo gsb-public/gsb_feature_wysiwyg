@@ -180,6 +180,39 @@ Footnote=p.footnote',
     ),
   );
 
+  // Exported profile: markdown_plus_iframe
+  $profiles['markdown_plus_iframe'] = array(
+    'format' => 'markdown_plus_iframe',
+    'editor' => 'markitup',
+    'settings' => array(
+      'default' => 1,
+      'user_choose' => 0,
+      'show_toggle' => 0,
+      'theme' => '',
+      'language' => 'en',
+      'buttons' => array(
+        'default' => array(
+          'h2' => 1,
+          'h3' => 1,
+          'h4' => 1,
+          'bold' => 1,
+          'italic' => 1,
+          'ul' => 1,
+          'ol' => 1,
+          'link' => 1,
+          'quotes' => 1,
+        ),
+        'footnotes' => array(
+          'footnotes' => 1,
+        ),
+      ),
+      'set' => 'markdown',
+      'css_setting' => 'theme',
+      'css_path' => '',
+      'advanced__active_tab' => 'edit-output',
+    ),
+  );
+
   // Exported profile: sidebar
   $profiles['sidebar'] = array(
     'format' => 'sidebar',

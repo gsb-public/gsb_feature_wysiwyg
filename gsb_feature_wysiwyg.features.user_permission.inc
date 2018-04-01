@@ -37,6 +37,15 @@ function gsb_feature_wysiwyg_user_default_permissions() {
     'module' => 'filter',
   );
 
+  // Exported permission: 'use text format markdown_plus_iframe'.
+  $permissions['use text format markdown_plus_iframe'] = array(
+    'name' => 'use text format markdown_plus_iframe',
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'filter',
+  );
+
   // Exported permission: 'use text format paragraphed_plain_text'.
   $permissions['use text format paragraphed_plain_text'] = array(
     'name' => 'use text format paragraphed_plain_text',
