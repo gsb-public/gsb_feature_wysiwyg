@@ -305,7 +305,7 @@ function gsb_feature_wysiwyg_filter_default_formats() {
         'weight' => -49,
         'status' => 1,
         'settings' => array(
-          'allowed_html' => '<h2> <h3> <h4> <a> <em> <strong> <blockquote> <ul> <ol> <li> <p> <sup> <table> <tbody> <th> <td> <tr> <thead> <iframe>',
+          'allowed_html' => '<h2> <h3> <h4> <a> <em> <strong> <blockquote> <ul> <ol> <li> <p> <sup> <table> <tbody> <th> <td> <tr> <thead> <iframe> <span>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),
